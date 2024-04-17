@@ -28,6 +28,7 @@ textarea {
   width: 100%;
   max-width: 30rem;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input:focus,
@@ -43,6 +44,7 @@ button {
   cursor: pointer;
   color: white;
   padding: 0.75rem 1rem;
+  border-radius: 5px;
 }
 
 button:focus {
@@ -124,4 +126,5 @@ button:active {
   padding: 1rem;
   border: 1px solid #ff0062;
   background: #f7f7f7;
+  border-radius: 5px;
 }
