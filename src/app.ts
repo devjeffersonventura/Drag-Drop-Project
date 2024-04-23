@@ -170,8 +170,7 @@ class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> implements 
         event.dataTransfer!.effectAllowed = 'move';
     }
 
-    dragEndHandler(event: DragEvent) {
-        console.log(event.dataTransfer!.getData('text/plain'));
+    dragEndHandler(_event: DragEvent) {
     }
 
     configure() {
@@ -325,7 +324,6 @@ class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
         if(Array.isArray(userInput)){
             const [title, description, people] = userInput;
             projectState.addProject(title, description, people);
-            console.log(title, description, people);
             this.clearInputs();
         }
     }
